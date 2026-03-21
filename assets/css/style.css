@@ -814,9 +814,14 @@ h3 { font-size: 1.25rem; }
     .hero-image { margin-top: 40px; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .steps { grid-template-columns: 1fr; gap: 32px; }
-    .pricing-grid { grid-template-columns: repeat(2, 1fr); max-width: 600px; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .features { padding: 60px 0; }
+    .showcase { padding: 60px 0; }
+    .how-it-works { padding: 60px 0; }
+    .pricing { padding: 60px 0; }
+    .cta { padding: 60px 0; }
 }
 
 @media (max-width: 640px) {
@@ -832,14 +837,36 @@ h3 { font-size: 1.25rem; }
         padding: 24px;
         box-shadow: var(--shadow-lg);
         border-radius: 0 0 var(--radius) var(--radius);
+        gap: 12px;
     }
     .nav-links.open a { color: var(--gray-700); }
+    .nav-links.open .nav-cta { text-align: center; }
     .nav-toggle { display: block; }
     .features-grid { grid-template-columns: 1fr; }
-    .hero-stats { gap: 24px; }
-    .proof-stats { gap: 40px; }
-    .footer-grid { grid-template-columns: 1fr; }
-    .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    .feature-card { padding: 24px; }
+    .hero { padding: 100px 0 60px; min-height: auto; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero-description { font-size: 1rem; }
+    .hero-badge { font-size: 0.75rem; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .hero-buttons .btn { width: 100%; justify-content: center; }
+    .hero-stats { gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .hero-stat-value { font-size: 1.4rem; }
+    .social-proof { padding: 40px 0; }
+    .social-proof p { font-size: 0.75rem; letter-spacing: 1px; }
+    .proof-stats { gap: 24px; }
+    .proof-stat-value { font-size: 1.4rem; }
+    .section-subtitle { font-size: 1rem; margin-bottom: 32px; }
     .showcase-tabs { gap: 4px; }
-    .showcase-tab { padding: 8px 16px; font-size: 0.8rem; }
+    .showcase-tab { padding: 6px 12px; font-size: 0.75rem; }
+    .pricing-card { padding: 28px; }
+    .pricing-price { font-size: 2.4rem; }
+    .cta h2 { font-size: 1.5rem; }
+    .cta p { font-size: 1rem; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+    .cta-buttons .btn { width: 100%; justify-content: center; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    .footer { padding: 40px 0 24px; }
+    .container { padding: 0 16px; }
 }
