@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlumbPage — Plumbing Management Software</title>
+    <meta name="description" content="All-in-one plumbing business management software. Scheduling, dispatch, invoicing, customer management, and more — built for plumbing companies.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="nav-logo">
+            <img src="assets/logo.png" alt="PlumbPage">
+            PlumbPage
+        </a>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#showcase">Screenshots</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#cta" class="nav-cta">Get Started Free</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    Built for plumbing professionals
+                </div>
+                <h1>Run your plumbing business <span>without the chaos</span></h1>
+                <p class="hero-description">
+                    Schedule jobs, dispatch technicians, invoice customers, and track everything
+                    from one simple dashboard. PlumbPage replaces the spreadsheets, whiteboards,
+                    and sticky notes holding your business back.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cta" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Start Free Trial
+                    </a>
+                    <a href="#showcase" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play-circle"></i> See It In Action
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="hero-stat-value">10k+</div>
+                        <div class="hero-stat-label">Jobs Managed</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-value">500+</div>
+                        <div class="hero-stat-label">Companies</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-value">99.9%</div>
+                        <div class="hero-stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-glow"></div>
+                <img src="assets/screenshots/dashboard.png" alt="PlumbPage Dashboard">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ SOCIAL PROOF ══════════════ -->
+<section class="social-proof">
+    <div class="container">
+        <p>Trusted by plumbing companies across the country</p>
+        <div class="proof-stats">
+            <div class="proof-stat">
+                <div class="proof-stat-value">4.9/5</div>
+                <div class="proof-stat-label">Average Rating</div>
+            </div>
+            <div class="proof-stat">
+                <div class="proof-stat-value">2 min</div>
+                <div class="proof-stat-label">Setup Time</div>
+            </div>
+            <div class="proof-stat">
+                <div class="proof-stat-value">30%</div>
+                <div class="proof-stat-label">Less Time on Admin</div>
+            </div>
+            <div class="proof-stat">
+                <div class="proof-stat-value">$0</div>
+                <div class="proof-stat-label">To Get Started</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ FEATURES ══════════════ -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-label">Features</span>
+            <h2 class="section-title">Everything your plumbing business needs</h2>
+            <p class="section-subtitle">
+                From the first customer call to the final invoice — PlumbPage handles
+                every step so you can focus on the work that matters.
+            </p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-up">
+                <div class="feature-icon blue"><i class="fas fa-calendar-alt"></i></div>
+                <h3>Smart Scheduling</h3>
+                <p>Drag-and-drop calendar with technician availability, skill matching, and conflict detection. Schedule jobs in seconds, not minutes.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon green"><i class="fas fa-map-marked-alt"></i></div>
+                <h3>Live Dispatch Map</h3>
+                <p>See every job and technician on a real-time map. Assign the closest available tech with one click and reduce drive time.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon orange"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h3>Invoicing & Estimates</h3>
+                <p>Generate professional invoices and multi-option estimates from the field. Accept payments online via credit card or financing.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon red"><i class="fas fa-users"></i></div>
+                <h3>Customer Management</h3>
+                <p>Full customer profiles with contact info, job history, equipment records, and a self-service portal for booking requests.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon purple"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Technician App</h3>
+                <p>Your techs get a mobile-friendly app to view jobs, clock in/out, add notes, capture signatures, and update job status on site.</p>
+            </div>
+            <div class="feature-card fade-up">
+                <div class="feature-icon teal"><i class="fas fa-boxes"></i></div>
+                <h3>Inventory & Pricebook</h3>
+                <p>Track parts and materials with low-stock alerts. Maintain a standardized pricebook for consistent quoting across your whole team.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ SCREENSHOT SHOWCASE ══════════════ -->
+<section class="showcase" id="showcase">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-label">Product Tour</span>
+            <h2 class="section-title">See PlumbPage in action</h2>
+            <p class="section-subtitle">
+                Click through the tabs below to explore the key screens of PlumbPage.
+            </p>
+        </div>
+
+        <div class="showcase-tabs">
+            <button class="showcase-tab active" data-target="dashboard">Dashboard</button>
+            <button class="showcase-tab" data-target="jobs">Jobs</button>
+            <button class="showcase-tab" data-target="calendar">Calendar</button>
+            <button class="showcase-tab" data-target="customers">Customers</button>
+            <button class="showcase-tab" data-target="invoices">Invoices</button>
+            <button class="showcase-tab" data-target="map">Dispatch Map</button>
+            <button class="showcase-tab" data-target="technicians">Technicians</button>
+            <button class="showcase-tab" data-target="inventory">Inventory</button>
+            <button class="showcase-tab" data-target="pricebook">Pricebook</button>
+            <button class="showcase-tab" data-target="job-requests">Job Requests</button>
+        </div>
+
+        <div class="showcase-image-wrapper fade-up">
+            <img class="showcase-image active" data-screen="dashboard" src="assets/screenshots/dashboard.png" alt="Dashboard" loading="lazy">
+            <img class="showcase-image" data-screen="jobs" src="assets/screenshots/jobs.png" alt="Jobs" loading="lazy">
+            <img class="showcase-image" data-screen="calendar" src="assets/screenshots/calendar.png" alt="Calendar" loading="lazy">
+            <img class="showcase-image" data-screen="customers" src="assets/screenshots/customers.png" alt="Customers" loading="lazy">
+            <img class="showcase-image" data-screen="invoices" src="assets/screenshots/invoices.png" alt="Invoices" loading="lazy">
+            <img class="showcase-image" data-screen="map" src="assets/screenshots/map.png" alt="Dispatch Map" loading="lazy">
+            <img class="showcase-image" data-screen="technicians" src="assets/screenshots/technicians.png" alt="Technicians" loading="lazy">
+            <img class="showcase-image" data-screen="inventory" src="assets/screenshots/inventory.png" alt="Inventory" loading="lazy">
+            <img class="showcase-image" data-screen="pricebook" src="assets/screenshots/pricebook.png" alt="Pricebook" loading="lazy">
+            <img class="showcase-image" data-screen="job-requests" src="assets/screenshots/job-requests.png" alt="Job Requests" loading="lazy">
+        </div>
+        <p class="showcase-caption">Real-time dashboard with job stats, alerts, and today's schedule at a glance.</p>
+    </div>
+</section>
+
+<!-- ══════════════ HOW IT WORKS ══════════════ -->
+<section class="how-it-works" id="how-it-works">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-label">How It Works</span>
+            <h2 class="section-title">Up and running in minutes</h2>
+            <p class="section-subtitle">
+                No complicated setup, no training sessions needed. PlumbPage is designed
+                to feel familiar from the moment you sign in.
+            </p>
+        </div>
+        <div class="steps">
+            <div class="step fade-up">
+                <div class="step-number">1</div>
+                <h3>Create Your Account</h3>
+                <p>Sign up free in 30 seconds. Add your company name, phone, and you're in. No credit card required.</p>
+            </div>
+            <div class="step fade-up">
+                <div class="step-number">2</div>
+                <h3>Add Your Team</h3>
+                <p>Invite your technicians, import your customer list, and set up your pricebook. We make migration easy.</p>
+            </div>
+            <div class="step fade-up">
+                <div class="step-number">3</div>
+                <h3>Start Dispatching</h3>
+                <p>Schedule your first job, dispatch a tech, and send an invoice — all before your morning coffee gets cold.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ PRICING ══════════════ -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-label">Pricing</span>
+            <h2 class="section-title">Simple, transparent pricing</h2>
+            <p class="section-subtitle">
+                Start free, upgrade when you're ready. No hidden fees, no contracts, cancel anytime.
+            </p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-name">Starter</div>
+                <div class="pricing-price">Free</div>
+                <div class="pricing-description">Perfect for solo plumbers getting organized.</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Up to 50 jobs/month</li>
+                    <li><i class="fas fa-check"></i> 1 technician</li>
+                    <li><i class="fas fa-check"></i> Scheduling & calendar</li>
+                    <li><i class="fas fa-check"></i> Customer management</li>
+                    <li><i class="fas fa-check"></i> Invoicing & estimates</li>
+                    <li><i class="fas fa-check"></i> Mobile technician app</li>
+                </ul>
+                <a href="#cta" class="btn btn-dark">Get Started Free</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-name">Professional</div>
+                <div class="pricing-price">$49 <span>/month</span></div>
+                <div class="pricing-description">For growing teams that need the full toolkit.</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Unlimited jobs</li>
+                    <li><i class="fas fa-check"></i> Unlimited technicians</li>
+                    <li><i class="fas fa-check"></i> Live dispatch map</li>
+                    <li><i class="fas fa-check"></i> GPS technician tracking</li>
+                    <li><i class="fas fa-check"></i> Inventory & pricebook</li>
+                    <li><i class="fas fa-check"></i> Online payments (Stripe)</li>
+                    <li><i class="fas fa-check"></i> Customer portal</li>
+                    <li><i class="fas fa-check"></i> SMS & email notifications</li>
+                    <li><i class="fas fa-check"></i> Reports & analytics</li>
+                    <li><i class="fas fa-check"></i> Priority support</li>
+                </ul>
+                <a href="#cta" class="btn btn-primary">Start Free Trial</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-label">Testimonials</span>
+            <h2 class="section-title">Loved by plumbing pros</h2>
+            <p class="section-subtitle">
+                Don't take our word for it — here's what our customers have to say.
+            </p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-up">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"We switched from paper tickets and a whiteboard. Within a week, PlumbPage had us scheduling faster and getting invoices out the same day instead of waiting until Friday."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MR</div>
+                    <div>
+                        <div class="testimonial-name">Mike Reynolds</div>
+                        <div class="testimonial-role">Owner, Reynolds Plumbing Co.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-up">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The dispatch map alone saved us hours every week. I can see where all my guys are and assign jobs to whoever's closest. Our customers noticed we're showing up faster."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">JB</div>
+                    <div>
+                        <div class="testimonial-name">Jennifer Brooks</div>
+                        <div class="testimonial-role">Operations Manager, ProFlow Services</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-up">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"I'm a one-man shop and PlumbPage keeps me organized without being overwhelming. The free plan has everything I need, and my customers love the online invoices."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">DL</div>
+                    <div>
+                        <div class="testimonial-name">Derek Lawson</div>
+                        <div class="testimonial-role">Independent Plumber</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ CTA ══════════════ -->
+<section class="cta" id="cta">
+    <div class="container">
+        <h2>Ready to take control of your business?</h2>
+        <p>Join hundreds of plumbing companies using PlumbPage to schedule smarter, get paid faster, and grow their business.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-white btn-lg">
+                <i class="fas fa-rocket"></i> Start Your Free Trial
+            </a>
+            <a href="#showcase" class="btn btn-outline btn-lg">
+                <i class="fas fa-images"></i> View Demo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="PlumbPage">
+                    PlumbPage
+                </div>
+                <p class="footer-description">
+                    All-in-one management software built specifically for plumbing businesses. Schedule, dispatch, invoice, and grow.
+                </p>
+            </div>
+            <div>
+                <h4>Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#showcase">Screenshots</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 PlumbPage. All rights reserved.</span>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
