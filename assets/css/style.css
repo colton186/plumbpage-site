@@ -815,6 +815,8 @@ h3 { font-size: 1.25rem; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .steps { grid-template-columns: 1fr; gap: 32px; }
     .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+    .tech-app-section > .container > div { grid-template-columns: 1fr !important; text-align: center; }
+    .tech-app-section .section-title { text-align: center !important; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
     .features { padding: 60px 0; }
@@ -844,6 +846,8 @@ h3 { font-size: 1.25rem; }
     .nav-toggle { display: block; }
     .features-grid { grid-template-columns: 1fr; }
     .feature-card { padding: 24px; }
+    .tech-app-section > .container > div { grid-template-columns: 1fr !important; }
+    section > .container > div[style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr !important; }
     .hero { padding: 100px 0 60px; min-height: auto; }
     .hero h1 { font-size: 1.8rem; }
     .hero-description { font-size: 1rem; }
