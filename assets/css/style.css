@@ -284,6 +284,11 @@ h3 { font-size: 1.25rem; }
     background-clip: text;
 }
 
+.hero-description strong {
+    color: var(--white);
+    font-weight: 700;
+}
+
 .hero-description {
     font-size: 1.2rem;
     color: rgba(255,255,255,.7);
@@ -341,6 +346,17 @@ h3 { font-size: 1.25rem; }
     background: var(--gray-50);
     border-top: 1px solid var(--gray-200);
     border-bottom: 1px solid var(--gray-200);
+}
+
+.social-proof p strong {
+    color: var(--blue-500);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-subtitle strong {
+    color: var(--blue-500);
+    font-weight: 700;
 }
 
 .social-proof p {
