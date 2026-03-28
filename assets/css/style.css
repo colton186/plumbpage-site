@@ -285,7 +285,7 @@ h3 { font-size: 1.25rem; }
 }
 
 .hero-description strong {
-    color: var(--white);
+    color: #ff6b00;
     font-weight: 700;
 }
 
@@ -349,13 +349,13 @@ h3 { font-size: 1.25rem; }
 }
 
 .social-proof p strong {
-    color: var(--blue-500);
+    color: #ff6b00;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .section-subtitle strong {
-    color: var(--blue-500);
+    color: #ff6b00;
     font-weight: 700;
 }
 
