@@ -47,6 +47,9 @@ const captions = {
     'job-requests': 'Customer portal submissions flow directly into your review queue.',
 };
 
+// Preload all showcase images immediately so tabs switch without flashing
+images.forEach(img => { if (!img.complete) new Image().src = img.src; });
+
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const target = tab.dataset.target;

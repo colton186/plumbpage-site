@@ -496,10 +496,18 @@ h3 { font-size: 1.25rem; }
     box-shadow: var(--shadow-xl);
     border: 1px solid var(--gray-200);
     width: 100%;
-    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
 }
 
-.showcase-image.active { display: block; }
+.showcase-image.active {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .showcase-caption {
     text-align: center;
