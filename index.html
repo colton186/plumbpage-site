@@ -434,7 +434,27 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@graph": [
+  {
+    "@type": "Organization",
+    "name": "PlumbPage",
+    "url": "https://plumbpage.com",
+    "logo": "https://plumbpage.com/assets/logo.png",
+    "description": "All-in-one field service management software for plumbing, HVAC, and electrical businesses.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "colton@plumbpage.com",
+      "contactType": "customer support"
+    },
+    "sameAs": []
+  },
+  {
+    "@type": "WebSite",
+    "name": "PlumbPage",
+    "url": "https://plumbpage.com"
+  },
+  {
+    "@type": "SoftwareApplication",
   "name": "PlumbPage",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
@@ -478,6 +498,8 @@
     "QuickBooks Online sync",
     "AI dispatch suggestions",
     "Customer e-signatures"
+  ]
+  }
   ]
 }
 </script>
